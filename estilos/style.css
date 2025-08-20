@@ -1,0 +1,66 @@
+/*variaveis*/
+:root {
+    --azul-escuro:#0D3B66;
+    --laranja:#ff6d4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--azul-escuro);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.196);
+    width: 100vw;
+    height: 80px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerLogo{
+    display: flex;
+    justify-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.itensMenu {
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+}
+
+.linkMenu {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.linkMenu:hover {
+    background-color: rgba(255, 255, 255, 0.89);
+    color: var(--azul-escuro);
+    border-radius: 10px;
+    box-shadow:2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
