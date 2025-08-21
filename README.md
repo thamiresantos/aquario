@@ -1,2 +1,4 @@
-# aquario
+# Aquário 🪼
+
+⚙️ Em desenvolvimento...
 
