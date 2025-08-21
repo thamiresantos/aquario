@@ -1,6 +1,7 @@
 /*variaveis*/
 :root {
     --azul-escuro:#0D3B66;
+    --azul-claro:#9ec0e0;
     --laranja:#ff6d4d;
 }
 
@@ -12,7 +13,7 @@
 body{
     background-color: var(--azul-escuro);
 }
-
+/* ----- CABEÇALHO -----*/
 header{
     display: flex;
     justify-content: center;
@@ -63,4 +64,102 @@ header{
     border-radius: 10px;
     box-shadow:2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
+
+/* ----- Section HERO -----*/
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 647px;
+}
+
+.video-de-fundo {
+    width: 100%;
+    height: 647px;
+    object-fit: cover; /* Preenche o contêiner, cortando se necessário */
+    position: absolute;
+    z-index: 0; /* fica atrás */
+    
+}
+
+.conteudo-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 600px;
+    margin: 5px;
+    position: relative;
+    z-index: 2; /* fica na frente */
+    color: rgb(199, 188, 184);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.hero::after { /* entre o vídeo e o texto */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1; 
+}
+
+.titulo {
+    font-size: 3.1em;
+    padding: 20px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+
+    /* degradê animado */
+    background: linear-gradient(90deg,#ffff, #40e0d0,#ffff, #40e0d0), #ffff;
+    background-size: 300% 300%;
+    animation: moveGrad 5s linear infinite;
+
+    /* faz o degradê preencher o texto */
+    -webkit-background-clip: text;    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+@keyframes moveGrad {
+    0%   { background-position:   0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position:   0% 50%; }
+  }
+
+.texto-hero{
+    font-size: 1.2em;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.btn-explorar{
+    font-size: 1em;
+    font-family:sans-serif;
+    font-weight: bold;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+    box-shadow:2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    margin: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-explorar:hover {
+    background-color: white;
+    color: #295074;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
 
