@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaWorld</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" type="image/x-icon" href="estilos/imagens/favicon.ico">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -12,16 +13,16 @@
     <nav class="menu">
         <div class="containerLogo"><img src="estilos/imagens/logo.png" alt="Logo da AquaWorld"class="logo"></div>
         <ul class="lista">
-           <li class="itensMenu"><a href="" class="linkMenu">Inicio</a></li>
-           <li class="itensMenu"><a href="" class="linkMenu">Sobre o Aquário</a></li>
-           <li class="itensMenu"><a href="" class="linkMenu">Espécies</a></li>
-           <li class="itensMenu"><a href="" class="linkMenu">Galeria</a></li>
-           <li class="itensMenu"><a href="" class="linkMenu">Contato</a></li>
+           <li class="itensMenu"><a href="#inicio" class="linkMenu">Inicio</a></li>
+           <li class="itensMenu"><a href="#sobre" class="linkMenu">Sobre o Aquário</a></li>
+           <li class="itensMenu"><a href="#especies" class="linkMenu">Espécies</a></li>
+           <li class="itensMenu"><a href="#galeria" class="linkMenu">Galeria</a></li>
+           <li class="itensMenu"><a href="#contato" class="linkMenu">Contato</a></li>
         </ul>
     </nav>
    </header>
 
-   <section class="hero">
+   <section class="hero" id="inicio">
     <video autoplay muted loop class="video-de-fundo">
         <source src="estilos/imagens/video-fundo.mp4" type="video/mp4">
         Seu navegador não suporta a tag de vídeo.
@@ -31,7 +32,49 @@
         <p class="texto-hero">Mergulhe em uma experiência única onde a beleza dos oceanos encontra a ciência.<br> Explore espécies fascinantes e ecossistemas marinhos incríveis.</p>
         <button type="button" class="btn-explorar">Explorar Aquário</button>
     </div>
+   </section>
 
+   <section class="sobre" id="sobre">
+    <h2 class="sobre-titulo">Sobre o AquaWorld</h2>
+    <p class="sobre-subtitulo">Somos mais que um aquário - somos um centro de descoberta, educação e conservação marinha</p>
+    
+        <section class="missao">
+            <div class="container-textos-missao">
+                <h3 class="titulo-missao">Nossa Missão</h3>
+                <p class="texto-missao">O AquaWorld foi criado com o objetivo de aproximar as pessoas da vida marinha, promovendo a educação ambiental e a conservação dos oceanos. Nossos tanques abrigam mais de 300 espécies diferentes de peixes, corais e invertebrados marinhos.</p> </br>
+                <p class="texto-missao">Através de experiências imersivas e educativas, inspiramos visitantes de todas as idades a se tornarem defensores dos oceanos e da vida marinha.</p>
+            </div>
+          
+            <img src="estilos/imagens/visitantes.png" alt="imagem do visitantes do aquario">
+        </section>
+
+        <section class="sobre-infomacoes">
+            <article class="itens-informacoes">
+                <span class="material-symbols-outlined">water</span>
+                <h3 class="titulo-informacoes">Ecossistema Marinho</h3>
+                <p class="descricao-informacoes">Recreamos ambientes marinhos autênticos com tecnologia avançada</p>
+            </article>
+
+            <article class="itens-informacoes">
+            <span class="material-symbols-outlined">school</span>
+                <h3 class="titulo-informacoes">Educação</h3>
+                <p class="descricao-informacoes">Programas educacionais para todas as idades sobre vida marinha</p>
+            </article>
+
+            <article class="itens-informacoes">
+                <span class="material-symbols-outlined">date_range</span>
+                <h3 class="titulo-informacoes">25 Anos</h3>
+                <p class="descricao-informacoes">Mais de duas décadas dedicadas à conservação marinha</p>
+            </article>
+
+            <article class="itens-informacoes">
+                <span class="material-symbols-outlined">trophy</span>
+                <h3 class="titulo-informacoes">Premiado</h3>
+                <p class="descricao-informacoes">Reconhecido internacionalmente pela excelência em aquarismo</p>
+            </article>
+            
+    
+        </div>
    </section>
 </body>
 </html>
