@@ -242,26 +242,21 @@ header{
   width: 100%;
   padding: 20px 0;
 }
-/* garante que o Swiper ocupe espaço */
+
 .container-cards.swiper {
   width: 100vw;
   padding: 5px 0;
 }
 
-/* o wrapper é flex por padrão */
 .swiper-wrapper {
   display: flex;
 }
 
-/* cada slide precisa ter largura automática */
 .swiper-slide {
-  width: 380px; /* deixa o slide se ajustar ao conteúdo */
-  display: flex; /* pra centralizar se quiser */
+  width: 380px; 
+  display: flex; 
   justify-content: center;
 }
-
-
-
 
 .card-peixe {
     border: 01px solid #e0e0e0;
@@ -369,6 +364,7 @@ header{
     grid-column: 1/3;
     color: rgb(89, 89, 89);
     padding: 7px;
+    text-align: justify;
 }
 
 ul{
