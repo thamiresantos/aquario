@@ -6,9 +6,11 @@
     <title>AquaWorld</title>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" type="image/x-icon" href="estilos/imagens/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+<!--Cabeçalho-->
    <header>
     <nav class="menu">
         <div class="containerLogo"><img src="estilos/imagens/logo.png" alt="Logo da AquaWorld"class="logo"></div>
@@ -21,7 +23,7 @@
         </ul>
     </nav>
    </header>
-
+<!--Hero-->
    <section class="hero" id="inicio">
     <video autoplay muted loop class="video-de-fundo">
         <source src="estilos/imagens/video-fundo.mp4" type="video/mp4">
@@ -33,12 +35,12 @@
         <button type="button" class="btn-explorar">Explorar Aquário</button>
     </div>
    </section>
-
+<!--Sobre o AquaWorld-->
    <section class="container-sessoes" id="sobre">
     <h2 class="titulo-sessoes">Sobre o AquaWorld</h2>
     <p class="subtitulo-sessoes">Somos mais que um aquário - somos um centro de descoberta, educação e conservação marinha</p>
     
-        <section class="missao">
+        <section class="missao"> <!--Missão-->
             <div class="container-textos-missao">
                 <h3 class="titulo-missao">Nossa Missão</h3>
                 <p class="texto-missao">O AquaWorld foi criado com o objetivo de aproximar as pessoas da vida marinha, promovendo a educação ambiental e a conservação dos oceanos. Nossos tanques abrigam mais de 300 espécies diferentes de peixes, corais e invertebrados marinhos.</p> </br>
@@ -48,7 +50,7 @@
             <img src="estilos/imagens/visitantes.png" alt="imagem do visitantes do aquario">
         </section>
 
-        <section class="sobre-infomacoes">
+        <section class="sobre-infomacoes"> <!--Informações e Conquistas sobre do aquario-->
             <article class="itens-informacoes">
                 <span class="material-symbols-outlined">water</span>
                 <h3 class="titulo-informacoes">Ecossistema Marinho</h3>
@@ -74,82 +76,174 @@
             </article>
         </div>
    </section>
-
+<!--Espécies do Aquário-->
    <section class="container-sessoes" id="especies">
-    <h3 class="titulo-sessoes">Espécies do Aquário</h3>
-    <p class="subtitulo-sessoes">Conheça algumas das fascinantes espécies que habitam nossos tanques</p>
+        <h3 class="titulo-sessoes">Espécies do Aquário</h3>
+        <p class="subtitulo-sessoes">Conheça algumas das fascinantes espécies que habitam nossos tanques</p>
 
-    <div class="container-cards">
-        <article class="card-peixe">
-            <div class="card-img card-img-01"></div>
-            <h3 class="titulo-card">Peixe-palhaço</h3>
-            <span class="status-peixe-estavel">Estável</span>
-            <p class="subtitulo-card">Amphiprion ocellatus</p>
-          
-            <p class="texto-card">Famoso por sua relação simbiótica com anêmonas-do-mar</p>
-            <ul>
-                <li class="linha">
-                    <span class="card-rotulo">Habitat:</span>
-                    <span class="card-valor">Recifes de coral</span>
-                </li>
-                 <li class="linha">
-                    <span class="card-rotulo">Tamanho:</span>
-                    <span class="card-valor">8-11 cm</span>
-                </li>
-                 <li class="linha">
-                    <span class="card-rotulo">Dieta:</span>
-                    <span class="card-valor">Onívoro</span>
-                </li>
-            </ul>
-        </article>
+        <!--carrossel-->
+        <div class=" swiper container-cards">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"> <!--Slide 01-->
+                    <article class="card-peixe">
+                        <div class="card-img card-img-01"></div>
+                        <h3 class="titulo-card">Peixe-palhaço</h3>
+                        <span class="status-peixe-estavel">Estável</span>
+                        <p class="subtitulo-card">Amphiprion ocellatus</p>
+                    
+                        <p class="texto-card">Famoso por sua relação simbiótica com anêmonas-do-mar</p>
+                        <ul>
+                            <li class="linha">
+                                <span class="card-rotulo">Habitat:</span>
+                                <span class="card-valor">Recifes de coral</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Tamanho:</span>
+                                <span class="card-valor">8-11 cm</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Dieta:</span>
+                                <span class="card-valor">Onívoro</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
         
-        <article class="card-peixe">
-            <div class="card-img card-img-02"></div>
-            <h3 class="titulo-card">Peixe-cirurgião-azul</h3>
-            <span class="status-peixe-pm">Preocupação menor</span>
-            <p class="subtitulo-card">Paracanthurus hepatus</p>
-            
-            <p class="texto-card">Conhecido por sua coloração azul vibrante e espinho venenoso.</p>
-             <ul>
-                <li class="linha">
-                    <span class="card-rotulo">Habitat:</span>
-                    <span class="card-valor">Recifes do Indo-Pacífico</span>
-                </li>
-                 <li class="linha">
-                    <span class="card-rotulo">Tamanho:</span>
-                    <span class="card-valor">12-15 cm</span>
-                </li>
-                 <li class="linha">
-                    <span class="card-rotulo">Dieta:</span>
-                    <span class="card-valor">Algas e plâncton</span>
-                </li>
-            </ul>
-        </article>
+                <div class="swiper-slide"> <!--Slide 02-->
+                    <article class="card-peixe">
+                        <div class="card-img card-img-02"></div>
+                        <h3 class="titulo-card">Peixe-cirurgião-azul</h3>
+                        <span class="status-peixe-pm">Preocupação menor</span>
+                        <p class="subtitulo-card">Paracanthurus hepatus</p>
+                        
+                        <p class="texto-card">Conhecido por sua coloração azul vibrante e espinho venenoso.</p>
+                        <ul>
+                            <li class="linha">
+                                <span class="card-rotulo">Habitat:</span>
+                                <span class="card-valor">Recifes do Indo-Pacífico</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Tamanho:</span>
+                                <span class="card-valor">12-15 cm</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Dieta:</span>
+                                <span class="card-valor">Algas e plâncton</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
 
+                <div class="swiper-slide"> <!--Slide 03-->
+                    <article class="card-peixe">
+                        <div class="card-img card-img-03"></div>
+                        <h3 class="titulo-card">Peixe-anjo-imperador</h3>
+                        <span class="status-peixe-pm">Preocupação menor</span>
+                        <p class="subtitulo-card">Pomacanthus imperator</p>
+                    
+                        <p class="texto-card">Uma das espécies mais majestosas dos recifes de coral.</p>
+                        <ul>
+                            <li class="linha">
+                                <span class="card-rotulo">Habitat:</span>
+                                <span class="card-valor">Recifes tropicais</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Tamanho:</span>
+                                <span class="card-valor">25-30cm</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Dieta:</span>
+                                <span class="card-valor">Esponjas e algas</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
 
-        <article class="card-peixe">
-             <div class="card-img card-img-03"></div>
-            <h3 class="titulo-card">Peixe-anjo-imperador</h3>
-             <span class="status-peixe-pm">Preocupação menor</span>
-            <p class="subtitulo-card">Pomacanthus imperator</p>
-           
-            <p class="texto-card">Uma das espécies mais majestosas dos recifes de coral.</p>
-             <ul>
-                <li class="linha">
-                    <span class="card-rotulo">Habitat:</span>
-                    <span class="card-valor">Recifes tropicais</span>
-                </li>
-                 <li class="linha">
-                    <span class="card-rotulo">Tamanho:</span>
-                    <span class="card-valor">25-30cm</span>
-                </li>
-                 <li class="linha">
-                    <span class="card-rotulo">Dieta:</span>
-                    <span class="card-valor">Esponjas e algas</span>
-                </li>
-            </ul>
-        </article>
-    </div>
+                <div class="swiper-slide"> <!--Slide 04-->
+                    <article class="card-peixe">
+                        <div class="card-img card-img-04"></div>
+                        <h3 class="titulo-card">Arraia-Jamanta</h3>
+                        <span class="status-peixe-pm">Vulnerável</span>
+                        <p class="subtitulo-card">Mobula birostris</p>
+                    
+                        <p class="texto-card">A gigante gentil dos oceanos, deslizando com graça em meio às correntes marinhas.</p>
+                        <ul>
+                            <li class="linha">
+                                <span class="card-rotulo">Habitat:</span>
+                                <span class="card-valor">Águas tropicais e subtropicais do mundo todo</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Tamanho:</span>
+                                <span class="card-valor">~2m até 7m</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Dieta:</span>
+                                <span class="card-valor">Plâncton e pequenos peixes</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="swiper-slide"> <!--Slide 05-->
+                    <article class="card-peixe">
+                        <div class="card-img card-img-05"></div>
+                        <h3 class="titulo-card">Água-viva-lua</h3>
+                        <span class="status-peixe-estavel">Estável</span>
+                        <p class="subtitulo-card">Aurelia aurita</p>
+                    
+                        <p class="texto-card">Um dos seres mais hipnóticos do oceano, flutuando como uma lua viva nas águas.</p>
+                        <ul>
+                            <li class="linha">
+                                <span class="card-rotulo">Habitat:</span>
+                                <span class="card-valor">Oceanos temperados e tropicais</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Tamanho:</span>
+                                <span class="card-valor">5-40cm</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Dieta:</span>
+                                <span class="card-valor">Pequenos organismos planctônicos</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="swiper-slide"> <!--Slide 06-->
+                    <article class="card-peixe">
+                        <div class="card-img card-img-06"></div>
+                        <h3 class="titulo-card">Lontra-Marinha</h3>
+                        <span class="status-peixe-perigo">Em Perigo</span>
+                        <p class="subtitulo-card">Enhydra lutris</p>
+                    
+                        <p class="texto-card">Pequena, ágil e brincalhona, uma das criaturas mais carismáticas dos rios e oceanos.</p>
+                        <ul>
+                            <li class="linha">
+                                <span class="card-rotulo">Habitat:</span>
+                                <span class="card-valor">Pacífico Norte</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Tamanho:</span>
+                                <span class="card-valor">1-1,5m</span>
+                            </li>
+                            <li class="linha">
+                                <span class="card-rotulo">Dieta:</span>
+                                <span class="card-valor">Carnívora</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+          <!-- botões e paginação do Swiper -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
    </section>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="javascript/carrossel.js"></script>
 </body>
 </html>
