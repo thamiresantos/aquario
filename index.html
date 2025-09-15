@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-<!--Cabeçalho-->
+<!------Cabeçalho------>
    <header>
     <nav class="menu">
         <div class="containerLogo"><img src="estilos/imagens/logo.png" alt="Logo da AquaWorld"class="logo"></div>
@@ -23,7 +23,7 @@
         </ul>
     </nav>
    </header>
-<!--Hero-->
+<!-------Hero------>
    <section class="hero" id="inicio">
     <video autoplay muted loop class="video-de-fundo">
         <source src="estilos/imagens/video-fundo.mp4" type="video/mp4">
@@ -35,7 +35,7 @@
         <button type="button" class="btn-explorar">Explorar Aquário</button>
     </div>
    </section>
-<!--Sobre o AquaWorld-->
+<!------Sobre o AquaWorld------>
    <section class="container-sessoes" id="sobre">
     <h2 class="titulo-sessoes">Sobre o AquaWorld</h2>
     <p class="subtitulo-sessoes">Somos mais que um aquário - somos um centro de descoberta, educação e conservação marinha</p>
@@ -76,7 +76,7 @@
             </article>
         </div>
    </section>
-<!--Espécies do Aquário-->
+<!-----Espécies do Aquário------>
    <section class="container-sessoes" id="especies">
         <h3 class="titulo-sessoes">Espécies do Aquário</h3>
         <p class="subtitulo-sessoes">Conheça algumas das fascinantes espécies que habitam nossos tanques</p>
@@ -241,7 +241,7 @@
             <div class="swiper-pagination"></div>
         </div>
    </section>
-<!--Galaria-->
+<!-----Galaria----->
    <section class="container-sessoes" id="galeria">
         <h3 class="titulo-sessoes">Galeria</h3>
         <p class="subtitulo-sessoes">Uma coleção de momentos únicos capturados em nosso aquário</p>
@@ -262,7 +262,7 @@
             </div>
 
             <div class="itens-galeria">
-                <img src="estilos/imagens/img (3).jpg" alt="Recife de coral" class="img-galeria">
+                <img src="estilos/imagens/img (4).jpg" alt="Recife de coral" class="img-galeria">
                 <span class="legenda-img-galeria">Recife de coral</span>
             </div>
 
@@ -275,6 +275,88 @@
                 <img src="estilos/imagens/img (6).jpg" alt="Peixe Betta" class="img-galeria">
                 <span class="legenda-img-galeria">Peixe Betta</span>
             </div>
+        </div>
+   </section>
+   <!-----Contato----->
+   <section class="container-sessoes" id="contato">
+        <h3 class="titulo-sessoes">Entre em Contato</h3>
+        <p class="subtitulo-sessoes">Tem alguma dúvida ou quer agendar uma visita? Estamos aqui para ajudar!</p>
+        <div class="contato">
+            <div class="container-informacoes">
+                <h3 class="titulo-container-contato">Informações de Contato</h3>
+                <div class="itens-contato">
+                    <span class="box-contato">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <h4 class="titulo-itens-contato">Endereço</h4>
+                    </span>
+                    <p class="texto-itens-contato">Av.Oceânica, 5000</p>
+                    <p class="texto-itens-contato">Porto Marinho, PI 64259-600</p>
+                </div>
+
+                <div class="itens-contato">
+                    <span class="box-contato">
+                        <span class="material-symbols-outlined">call</span>
+                        <h4 class="titulo-itens-contato">Telefone</h4>
+                    </span>
+                    <p class="texto-itens-contato">(86) 9999-5555</p>
+                </div>
+
+                <div class="itens-contato">
+                    <span class="box-contato">
+                        <span class="material-symbols-outlined">mail</span>
+                        <h4 class="titulo-itens-contato">Email</h4>
+                    </span>
+                    <p class="texto-itens-contato">contato@aquaworld.com</p>
+                </div>
+            
+                <div class="itens-contato">
+                    <span class="box-contato">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <h4 class="titulo-itens-contato">Horário de Funcionamento</h4>
+                    </span>
+                    <p class="texto-itens-contato">Segunda a Sexta: 9h às 18h</p>
+                    <p class="texto-itens-contato">Sábados e Domingos: 8h às 19h</p>
+                    <p class="texto-itens-contato">Feriados: 8h às 14h</p>
+                </div>
+
+                <div class="container-valores">
+                    <div>
+                        <p class="texto-valores">Preços dos Ingressos</p>
+                        <p class="texto-valores">Adultos</p>
+                        <p class="texto-valores">Crianças (5-12 anos)</p>
+                        <p class="texto-valores">Estudantes/Idosos </p>
+                        <p class="texto-valores">Crianças até 4 anos</p>
+                    </div>
+                    <div>
+                        <p class="valores">R$ 45</p>
+                        <p class="valores">R$25</p>
+                        <p class="valores">R$30</p>
+                        <p class="valores">Gratuito</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="/processar-formulario" method="POST" class="formulario-contato">
+                <p class="texto-formulario-contato">Envie uma Mensagem</p>
+                <label for="nome" class="texto-formulario-contato">Nome:</label><br>
+                <input type="text" class="formulario-input" name="nome" placeholder="Seu nome"><br><br>
+
+                <label for="email" class="texto-formulario-contato">E-mail:</label><br>
+                <input type="email" class="formulario-input" name="email" placeholder="seu@email.com"><br><br>
+                
+                <label for="number" class="texto-formulario-contato">Telefone</label><br>
+                <input type="number" class="formulario-input" name="telefone" placeholder="(86) 9999-9999"><br><br>
+
+                <label for="text" class="texto-formulario-contato">Assunto</label><br>
+                <input type="text"  class="formulario-input" name="assunto" placeholder="Como podemos ajudar?"><br><br>
+
+                <label for="mensagem" class="texto-formulario-contato">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" class="formulario-input" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea><br><br>
+
+
+                <input type="submit" class="btn-formulario" value="Enviar Mensagem">
+            </form> 
+            
         </div>
    </section>
 
