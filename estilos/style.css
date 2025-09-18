@@ -3,7 +3,6 @@
     --azul-escuro:#0D3B66;
     --azul-acinzentado:#3C6184;
     --azul-claro:#9ec0e0;
-    --laranja:#ff6d4d;
 }
 
 * {
@@ -14,6 +13,8 @@
 body{
     background-color: white;
     overflow-x: hidden; /* remove a rolagem horizontal */
+    width: 100vw;
+    height: 100vh;
 }
 /* ----- CABEÇALHO -----*/
 header{
@@ -507,4 +508,58 @@ ul{
 .btn-formulario:hover {
     background-color: var(--azul-claro);
     color: black;
+}
+
+/*-------FOOTER------*/
+footer {
+    background-color: var(--azul-acinzentado);
+    width: 100vw;
+    height: 280px;
+    color: white;
+    margin: 0px 15px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.logo-footer{
+    width: 230px;
+    margin: 0px;
+
+}
+.texto-footer {
+    font-size: 14px;
+    width: 250px;
+
+}
+
+.titulo-links-footer {
+    font-weight: bolder;
+   padding: 8px;
+}
+
+.itens-links-footer-contato, .itens-links-footer{
+    list-style-type: none;
+    padding: 5px;
+}
+.itens-links-footer:hover {
+    color: var(--azul-claro);
+    cursor: pointer;
+}
+.informacao-rodape {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.informacao-rodape > a {
+    text-decoration: none;
+    color: white;
+}
+
+.informacao-rodape > a:hover {
+color: var(--azul-claro);
 }
