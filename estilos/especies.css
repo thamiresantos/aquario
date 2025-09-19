@@ -1,0 +1,140 @@
+/*---------- Section Espécies do Aquário -----------*/
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.container-cards.swiper {
+  width: 100vw;
+  padding: 5px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: 380px; 
+  display: flex; 
+  justify-content: center;
+}
+
+.card-peixe {
+    border: 01px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 40px;
+    width: 380px;
+    height: 416px;
+    text-align: center;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 0px;
+
+}
+
+.card-peixe:hover{
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    grid-column: 1/3;
+}
+
+.card-img-01 {
+    background-image: url(imagens/slide01.png);
+}
+
+.card-img-02 {
+    background-image: url(imagens/slide02.png);
+}
+
+.card-img-03 {
+    background-image: url(imagens/slide03.png);
+}
+
+.card-img-04 {
+    background-image: url(imagens/slide04.png);
+}
+
+.card-img-05 {
+    background-image: url(imagens/slide05.png);
+}
+
+.card-img-06 {
+    background-image: url(imagens/slide06.png);
+}
+
+.titulo-card {
+    font-size: 15px;
+    color: var(--azul-escuro);
+    align-items: start;
+    padding: 10px 10px 0px;
+    text-align: left;
+}
+
+.subtitulo-card {
+    color: grey;
+    grid-column: 1/3;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.status-peixe-estavel {
+    background-color: rgb(177, 237, 177);
+    width: 60px;
+    height: 20px;
+    border-radius: 17px;
+    color: green;
+    padding: 2px;
+    margin: 15px 15px 0px ;
+}
+
+.status-peixe-pm{
+    background-color: rgb(250, 228, 188);
+    width: 150px;
+    height: 20px;
+    border-radius: 17px;
+    color: orange;
+    padding: 1px;
+    margin: 15px 15px 0px ;
+}
+
+.status-peixe-perigo {
+    background-color: rgb(255, 131, 127);
+    width: 80px;
+    height: 20px;
+    border-radius: 17px;
+    color: red;
+    padding: 2px;
+    margin: 15px 15px 0px ;
+}
+
+.card-rotulo{
+    color: var(--azul-escuro);
+    font-weight: bold;
+}
+
+.texto-card{
+    grid-column: 1/3;
+    color: rgb(89, 89, 89);
+    padding: 7px;
+    text-align: justify;
+}
+
+ul{
+    grid-column: 1/3;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+

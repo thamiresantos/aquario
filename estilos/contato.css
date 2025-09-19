@@ -1,0 +1,81 @@
+/*------------------contato-----------------------------*/
+.contato {
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px
+}
+
+.titulo-container-contato,.titulo-itens-contato{
+    color: var(--azul-escuro);
+    padding: 3px;
+}
+
+.box-contato { 
+    display: flex;
+}
+
+.itens-contato {
+    padding: 13px;
+}
+
+.texto-itens-contato{
+    color:rgb(89, 89, 89);
+    padding: 4px;
+}
+
+.container-valores {
+    border: 1px solid rgb(89, 89, 89);
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.texto-valores{
+    color: var(--azul-escuro);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.valores { 
+    color: var(--azul-acinzentado);
+    font-weight: 500;
+    padding: 28px 3px 2px 2px;
+}
+
+.formulario-contato {
+    border: 1px solid rgb(89, 89, 89);
+    width: 500px;
+    border-radius: 10px;
+  
+}
+
+.texto-formulario-contato {
+    color: var(--azul-escuro);
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.formulario-input {
+    margin: 20px 5px 0px 20px;
+    padding: 8px;
+    width: 350px;
+}
+
+.btn-formulario {
+    width: 450px;
+    padding: 20px;
+    background-color:var(--azul-escuro);
+    border: none;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-size: 1em;
+    margin: 20px 0px 5px 20px;
+}
+
+.btn-formulario:hover {
+    background-color: var(--azul-claro);
+    color: black;
+}
