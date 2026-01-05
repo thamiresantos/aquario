@@ -1,5 +1,4 @@
 /*----GALERIA----*/
-
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas */
@@ -46,4 +45,23 @@
 
 .itens-galeria:hover .legenda-img-galeria {
   opacity: 1;
+}
+
+/* Tablets*/
+@media (max-width: 1024px) {
+    .galeria {
+    grid-template-columns: repeat(2, 1fr);}
+}
+
+/* Mobile*/
+@media (max-width: 768px) {
+    .galeria {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .img-galeria {
+    height: auto;
+    max-height: 320px;
+  }
 }

@@ -1,54 +1,67 @@
 /*-------FOOTER------*/
 footer {
     background-color: var(--azul-acinzentado);
-    width: 100vw;
-    height: 280px;
+    width: 100%;
     color: white;
-    margin: 0px 15px;
 }
 
 .rodape {
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
-.logo-footer{
-    width: 230px;
-    margin: 0px;
-
+.container-footer {
+    max-width: 250px;
 }
+
+.logo-footer {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
 .texto-footer {
     font-size: 14px;
-    width: 250px;
-
+    line-height: 1.5;
 }
 
 .titulo-links-footer {
-    font-weight: bolder;
-   padding: 8px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
-.itens-links-footer-contato, .itens-links-footer{
-    list-style-type: none;
-    padding: 5px;
+.itens-links-footer,
+.itens-links-footer-contato {
+    list-style: none;
+    font-size: 14px;
+    padding: 4px 0;
 }
+
 .itens-links-footer:hover {
     color: var(--azul-claro);
     cursor: pointer;
 }
-.informacao-rodape {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.3);
 }
 
-.informacao-rodape > a {
+.informacao-rodape {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.informacao-rodape a {
     text-decoration: none;
     color: white;
 }
 
-.informacao-rodape > a:hover {
-color: var(--azul-claro);
+.informacao-rodape a:hover {
+    color: var(--azul-claro);
 }
-
